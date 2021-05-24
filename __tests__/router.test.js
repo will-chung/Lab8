@@ -2,6 +2,8 @@
  * @jest-environment jsdom
  */
 
+import { pushToHistory } from '../scripts/router.js';
+
 describe('pushToHistory', () => {
     test('increments history stack length', () => {
         const preLength = history.length;
